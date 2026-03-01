@@ -136,8 +136,10 @@ function showQuote() {
 }
 
 if (quoteEl) {
-  showQuote();
-  setInterval(showQuote, 7000);
+  document.addEventListener('DOMContentLoaded', () => {
+    showQuote();
+    setInterval(showQuote, 7000);
+  });
 }
 
 
